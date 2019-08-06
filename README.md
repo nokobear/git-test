@@ -67,4 +67,11 @@ gpg encrypt.
 
     gpg --gen-key
     gpg -e -r email_address ~/.netrc
+    rm ~/.netrc
+
+setup git-credential-netrc
+
+    curl -o ~/bin/git-credential-netrc https://raw.githubusercontent.com/git/git/master/contrib/credential/netrc/git-credential-netrc
+    chmod 755 ~/bin/git-credential-netrc
+    git config --global credential.helper "netrc -f ~/.netrc.gpg -v"
 
