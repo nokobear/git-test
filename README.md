@@ -116,14 +116,23 @@ tig status  # view-status(s)
     q:  quit(or return)
 
 ### view-status
-![tig-view-main](./img/tig-view-status.png)
+![tig-view-stauts()](./img/tig-view-status.png)
 
     jk: select
     u:  git add (or undo git add)
-    C:  
+    C:  commit
     q:  quit(or return)
 
+<kbd>jk</kbd> and <kbd>u</kbd> -> git add
+![tig-view-status(added)](./img/tig-view-status2.png)
+
+<kbd>C</kbd> -> commit
+![tig-commit](./img/tig-commit.png)
+    vim
+    :wq  commit
+    :q!  cancel
 
 ## test show image
 ![hello](./img/hello.png)
+
 
