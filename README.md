@@ -30,3 +30,41 @@ push
 
     git push origin master
 
+## push without password
+
+1. use ssh
+2. use https and credential-helper
+3. use https and .netrc
+4. use https and .netrc.gpg
+
+1-3. omit
+### use https and .netrc.gpg
+
+create `~/.netrc`
+
+    touch ~/.netrc
+    chmod 600 ~/.netrc
+    vim ~/.netrc
+
+~/.netrc
+
+    machine github.com
+      login nokobear
+      password xxxxxxxxxxxx
+      protocol https
+    
+    machine gist.github.com
+      login  nokobear
+      password xxxxxxxxxxx
+      protocol https
+
+push test.
+
+    cd git-test
+    git push origin master
+
+gpg encrypt.
+
+    gpg --gen-key
+    gpg -e -r email_address ~/.netrc
+
