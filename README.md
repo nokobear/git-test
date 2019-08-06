@@ -1,5 +1,5 @@
 # git-test
-This is my test repository to test how to use git and github effectively.
+How to use git effectively. (This is my memo.)
 
 ## git frontends
 - browser (github)
@@ -93,8 +93,7 @@ chmod 755 ~/bin/git-credential-netrc
 git config --global credential.helper "netrc -f ~/.netrc.gpg -v"
 ```
 
-optional
-modify ~/.netrc
+modify ~/.netrc (optional)
 
 ```sh
 gpg -d ~/.netrc.gpg > ~/.netrc
@@ -113,26 +112,27 @@ tig status  # view-status(s)
 
     jk: select
     s:  view-status
-    q:  quit(or return)
+    q:  quit (or return)
+    h:  help
 
 ### view-status
 ![tig-view-stauts()](./img/tig-view-status.png)
 
     jk: select
     u:  git add (or undo git add)
-    C:  commit
-    q:  quit(or return)
+    C:  git commit
+    q:  quit (or return)
 
-<kbd>jk</kbd> and <kbd>u</kbd> -> git add
+<kbd>u</kbd> -> git add
 ![tig-view-status(added)](./img/tig-view-status2.png)
 
 <kbd>C</kbd> -> commit
 ![tig-commit](./img/tig-commit.png)
+
     vim
     :wq  commit
     :q!  cancel
 
 ## test show image
 ![hello](./img/hello.png)
-
 
