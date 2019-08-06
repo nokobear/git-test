@@ -1,5 +1,5 @@
 # git-test
-This is my test repository.(how to use git and github effectively)
+This is my test repository to test how to use git and github effectively.
 
 ## git frontends
 - browser (github)
