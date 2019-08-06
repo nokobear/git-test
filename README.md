@@ -102,6 +102,28 @@ vim ~/.netrc
 gpg -e -r email_address ~/.netrc
 ```
 
+## tig
+```sh
+tig         # view-main(m)
+tig status  # view-status(s)
+```
+
+### view-main
+![tig-view-main](./img/tig-view-main.png)
+
+    jk: select
+    s:  view-status
+    q:  quit(or return)
+
+### view-status
+![tig-view-main](./img/tig-view-status.png)
+
+    jk: select
+    u:  git add (or undo git add)
+    C:  
+    q:  quit(or return)
+
+
 ## test show image
 ![hello](./img/hello.png)
 
