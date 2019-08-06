@@ -99,6 +99,7 @@ modify ~/.netrc (optional)
 gpg -d ~/.netrc.gpg > ~/.netrc
 vim ~/.netrc
 gpg -e -r email_address ~/.netrc
+rm ~/.netrc
 ```
 
 ## tig
