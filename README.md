@@ -96,8 +96,10 @@ git config --global credential.helper "netrc -f ~/.netrc.gpg -v"
 modify ~/.netrc (optional)
 
 ```sh
+# (decrypt)
 gpg -d ~/.netrc.gpg > ~/.netrc
 vim ~/.netrc
+# (encrypt)
 gpg -e -r email_address ~/.netrc
 rm ~/.netrc
 ```
