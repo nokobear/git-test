@@ -34,13 +34,13 @@ push
 git push origin master
 ```
 
-branch
+branch (optional)
 
 ```sh
-git branch                          # view
-git branch dev1                     # create new branch "dev1"
-git checkout dev1                   # switch to branch "dev1"
-git checkout master; git merge dev1 # merge (master = master + dev1)
+git branch                            # view list
+git branch dev1                       # create new branch "dev1"
+git checkout dev1                     # switch to branch "dev1"
+git checkout master; git merge dev1   # merge (master = master + dev1)
 ```
 
 ## push without password
@@ -53,8 +53,7 @@ git checkout master; git merge dev1 # merge (master = master + dev1)
 4. use https and .netrc.gpg
 
 1-3. omit  
-see:  
-[authenticating-with-github-from-git](https://help.github.com/articles/set-up-git#next-steps-authenticating-with-github-from-git)
+see: [authenticating-with-github-from-git](https://help.github.com/articles/set-up-git#next-steps-authenticating-with-github-from-git)
 
 ### 4. use https and .netrc.gpg
 
