@@ -43,7 +43,32 @@ git checkout dev1                     # switch to branch "dev1"
 git checkout master; git merge dev1   # merge (master = master + dev1)
 ```
 
-## push without password
+## git configuration
+
+```sh
+git config --global user.name   nokobear
+git config --global user.email  "42159927+nokobear@users.noreply.github.com"
+git config --global color.ui    auto
+git config --global alias.co    checkout
+git config --global core.editor /usr/bin/vim
+```
+
+or edit `~/.gitconfig` directly  
+~/.gitconfig
+
+```
+[user]
+	name = nokobear
+	email = 42159927+nokobear@users.noreply.github.com
+[color]
+	ui = auto
+[alias]
+	co = checkout
+[core]
+	editor = /usr/bin/vim
+```
+
+### push without password
 
 4 methods to do it.
 
