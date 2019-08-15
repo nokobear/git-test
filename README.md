@@ -8,13 +8,12 @@ How to use git effectively. (This is my memo.)
 
 ## git commands
 
-clone
+clone (remote -> local)
 ```sh
 git clone https://github.com/nokobear/git-test
 ```
 
 view
-
 ```sh
 git log
 git status
@@ -28,14 +27,12 @@ git commit -m "message"
 git tag 0.1.0 105e2e57fff64791b5899f569b30272ae063f4ef
 ```
 
-push
-
+push (local -> remote)
 ```sh
 git push origin master
 ```
 
 branch (optional)
-
 ```sh
 git branch                            # view list
 git branch dev1                       # create new branch "dev1"
@@ -55,7 +52,6 @@ git config --global core.editor /usr/bin/vim
 
 or edit `~/.gitconfig` directly  
 ~/.gitconfig
-
 ```
 [user]
 	name = nokobear
@@ -110,7 +106,6 @@ git push origin master
 ```
 
 gpg encrypt.
-
 ```sh
 gpg --gen-key
 # ( keytype:RSA and RSA, bitlength:2048, limit:0day(unlimited),
@@ -121,7 +116,6 @@ rm ~/.netrc
 ```
 
 setup git-credential-netrc
-
 ```sh
 # (download to ~/bin)
 curl -o ~/bin/git-credential-netrc https://raw.githubusercontent.com/git/git/master/contrib/credential/netrc/git-credential-netrc
@@ -130,7 +124,6 @@ git config --global credential.helper "netrc -f ~/.netrc.gpg -v"
 ```
 
 modify ~/.netrc (optional)
-
 ```sh
 # (decrypt)
 gpg -d ~/.netrc.gpg > ~/.netrc
